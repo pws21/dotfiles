@@ -162,7 +162,7 @@ shopt -s histappend
 
 # Make prompt informative
 # See:  http://www.ukuug.org/events/linux2003/papers/bash_tips/
-PS1="\[\033[0;34m\][\u@\h:\w]$\[\033[0m\]"
+PS1="\[\033[0;32m\][\u@\h:\[\033[0;37m\]\w\[\033[0;32m\]]$\[\033[0m\] "
 
 ## -----------------------
 ## -- 2) Set up aliases --
@@ -201,8 +201,8 @@ export GREP_COLOR='1;31' # green for matches
 # 2.5) sort options
 # Ensures cross-platform sorting behavior of GNU sort.
 # http://www.gnu.org/software/coreutils/faq/coreutils-faq.html#Sort-does-not-sort-in-normal-order_0021
-unset LANG
-export LC_ALL=POSIX
+#unset LANG
+#export LC_ALL=POSIX
 
 # 2.6) Install rlwrap if not present
 # http://stackoverflow.com/a/677212
@@ -224,4 +224,4 @@ fi
 ## ------------------------------
 
 ## Define any user-specific variables you want here.
-source ~/.bashrc_custom
+#source ~/.bashrc_custom
